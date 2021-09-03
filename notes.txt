@@ -1,0 +1,72 @@
+Create a webpage where there is an input box for valid usernames
+A user can input as many usernames as he/she wants through an "Add button"
+The "Add" Button pushes the value of the input box into an array.
+
+Finally there is another button called "Check" button
+The "Check" button calls a function to check if a username is valid or not
+
+Display a list of valid usernames and another list of invalid usernames
+
+A Username is only valid if it does not exceed 10 characters
+
+troy1129 = # of Characters =8 thus, troy1129 is a valid username
+
+patricktroyelalto = #ofCharacters= 18 , thus is not a valid username
+
+
+Components
+    input box
+    add button
+    check button
+    2 tables
+    - table valid usernames
+    - table invalid usernames
+
+Input tag attributes
+button	Defines a clickable button (mostly used with a JavaScript to activate a script)
+checkbox	Defines a checkbox
+color	Defines a color picker
+date	Defines a date control (year, month, day (no time))
+datetime-local	Defines a date and time control (year, month, day, time (no timezone)
+email	Defines a field for an e-mail address
+file	Defines a file-select field and a "Browse" button (for file uploads)
+hidden	Defines a hidden input field
+image	Defines an image as the submit button
+month	Defines a month and year control (no timezone)
+number	Defines a field for entering a number
+password	Defines a password field
+radio	Defines a radio button
+range	Defines a range control (like a slider control)
+reset	Defines a reset button
+search	Defines a text field for entering a search string
+submit	Defines a submit button
+tel	Defines a field for entering a telephone number
+text	Default. Defines a single-line text field
+time	Defines a control for entering a time (no timezone)
+url	Defines a field for entering a URL
+week	Defines a week and year control (no timezone)
+
+
+
+variable:
+block scope
+- const
+- let
+global scope
+- var
+
+different array methods:
+.push();
+pushes parameter value into last index of array
+.slice();
+.length
+returns an array
+
+names.forEach(el => {
+                
+            });
+
+            if(username.length > 10) invalid.push(username);
+            if(username.length <= 10) valid.push(username);
+            console.log(`invalid array: ${invalid}`);
+            console.log(`valid array: ${valid}`);

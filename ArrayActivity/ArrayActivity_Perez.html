@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Activity</title>
+    <script defer src="./script.js"></script>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+            font-size: 1em;
+        }
+        header{
+            margin: 10px;
+        }
+        .gridContainer{
+            display: grid;
+            grid-template-columns: 20vw 20vw;
+            justify-items: start;
+            align-items: start;
+        }
+        .table{
+            border: 2px solid black;
+            width: 90%;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        #usernameInput{
+            height: 25px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <label for="usernameInput">Username: </label>
+            <input id="usernameInput" type="text" placeholder="Input username" autocomplete="off" autocapitalize="off" autofocus multiple required>
+            <br><br><button id="addUsername" onClick="addUsername();">Add</button>
+            <button id="checkUsername" onClick="checkUsername();">Check</button>
+            <br><br>
+        </div>
+        <div class="gridContainer">
+            <div class="table" id="table1">
+                <h1>Valid Usernames</h1>
+            </div>
+            <div class="table" id="table2">
+                <h1>Invalid Usernames</h1>
+            </div>
+        </div>
+            
+        
+    </header>
+    
+        
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <script defer src="./script.js"></script>
+    <style>
+        .input-control {
+            margin-bottom: 20px;
+        }
+        .actions {
+            margin-bottom: 20px;
+        }
+        .grid {
+            max-width: max-content;
+            display: grid;
+            grid-template-columns: 500px 500px;
+
+            column-gap: 10px;
+            border: 1px solid #000;
+            padding: 0 1rem;
+        }
+        .valid {
+            border-right: 1px solid #000;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="input-control">
+      <input type="text" id="username" class="user-input" />
+      <label for="username">Username</label>
+    </div>
+    <div class="actions">
+      <button class="add">Add</button> <button class="check">Check</button>
+    </div>
+    <ul class="username-list"></ul>
+    <div class="grid">
+      <div class="valid">
+        <h3>Valid Usernames</h3>
+      </div>
+      <div class="invalid"><h3>Invalid Usernames</h3></div>
+    </div>
+  </body>
+</html>
+
