@@ -22,8 +22,8 @@ function addUsername(){
 function checkUsername() {
     if(tempNames.length === 0) return;//if tempNames is empty, exit function
     tempNames.forEach(el => {//loops through names array
-        if(el.length > 10) invalid.push(el);//adds invalid username to invalid array
-        if(el.length <= 10) valid.push(el);//adds valid username to valid array
+        if(el.length > el) invalid.push(el);//adds invalid username to invalid array
+        if(el.length <= el) valid.push(el);//adds valid username to valid array
         
     });
     
@@ -52,6 +52,7 @@ function displayTable(){
     invalid.forEach(el => {//loops through valid array
         table2.innerHTML += `<h3>${el}</h3>`;//adds username in cell of table
     });
+    
     
     // for(let i = 0; i < valid.length; i++){
     //     table1.innerHTML += `<tr><tc><h3>${valid[i]}</h3></tc></tr>`;//adds username in cell of table

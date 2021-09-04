@@ -1,3 +1,5 @@
+'use strict';
+
 const studentName = document.querySelector("#name");
 const email = document.querySelector("#email");
 // const course = document.querySelector("");
@@ -25,9 +27,7 @@ let courses = [
 
 const courseRadio = document.querySelector("#courseRadio");
 
-//function 
-
-courseRadio.insertAdjacentHTML("beforebegin", courses.join(''));//makes the course array into html elements and places in html
+courseRadio.innerHTML = courses.join('');//makes the course array into html elements and places in html
 
 
 
@@ -143,7 +143,6 @@ function validateUsername(username){
 }
 
 function validatePassword(pass1, pass2) {
-
     return (pass1 === pass2);//basic comparison;
 }
 
