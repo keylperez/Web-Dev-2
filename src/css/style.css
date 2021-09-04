@@ -1,0 +1,51 @@
+body {
+  background-color: palevioletred;
+  background-image: url("../img/best\ bg.jpg");
+  background-size: cover;
+  color: #391c1a;
+  padding: 0 100px;
+}
+
+header {
+  grid-column: 2 / -1;
+}
+
+h1 {
+  color: #f3d6b3;
+  font-size: 4rem;
+  font-family: Gunplay;
+  margin: 40px 0;
+  font-weight: 400;
+  text-align: right;
+}
+
+.accordion-header strong {
+  font-size: 1.3rem;
+}
+
+.accordion {
+  float: right;
+  border-radius: 100px;
+}
+
+.accordion,
+.accordion-item,
+.accordion-header,
+.accordion-button,
+.accordion-button:active
+/* .accordion-button::after, */
+.accordion-button:not(.collapse) {
+  background-color: #f3d6b3;
+  color: inherit;
+  width: 900px;
+  outline: 0;
+  /* float: right; */
+}
+.accordion-collapse {
+  background-color: var(--bs-gray-300);
+  transition: 0.5s;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
